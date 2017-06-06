@@ -76,6 +76,12 @@ std::string Hash::getHash(std::string userString, unsigned int lengthHash){
                     this->hash += userString[i];
                 }
             }
+        }else{
+            int userLength = userString.length();
+            for (int i = userLength / 2 , j = userLength / 2  + 1; i != 2; i--, j++){
+                this->hash += userString[i];
+                this->hash += userString[j];
+            }
         }
 
         //добавление оригинальных солей

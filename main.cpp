@@ -1,7 +1,7 @@
 #include "AutoTests.hpp"
 
 int main() {
-    AutoTests tests(1000);
-    tests.GoTestRandom(5);
+    AutoTests tests(50000);
+    tests.GoTestRandom(8);
     return 0;
 }
